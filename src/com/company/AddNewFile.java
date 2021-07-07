@@ -13,7 +13,7 @@ public class AddNewFile {
         File FileDir = new File("D:\\LockedMe");
         if (FileDir.isDirectory()) {
             Scanner FileName = new Scanner(System.in);
-            System.out.println("Enter the file name with Extantion( Like- .txt,.doc etc) :- ");
+            System.out.println("Enter the file name with Extension( Like- .txt,.doc etc) :- ");
             String Nufil = FileName.nextLine();
             File Newfile = new File("D:\\LockedMe\\" + Nufil);
             Newfile.createNewFile();
