@@ -1,13 +1,11 @@
 import java.io.File;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class ShowFile {
+
    // public ShowFile() {
     public static void main(String[] args) {
-        File FileDir = new File("D:\\LockedMe");
+         File FileDir = new File("D:\\LockedMe");
         if (FileDir.isDirectory()){
             List listFile = Arrays.asList(FileDir.list());
             System.out.println("All File Name Are - ");
@@ -21,7 +19,7 @@ public class ShowFile {
             }
         }
         else {
-            System.out.println(FileDir.getAbsolutePath() + " Please Give correct Path of Directry ");
+            System.out.println(FileDir.getAbsolutePath() + " Please Give correct Path of Directory or foldr  ");
         }
 
     }
