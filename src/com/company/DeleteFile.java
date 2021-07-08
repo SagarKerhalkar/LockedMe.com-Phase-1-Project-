@@ -15,7 +15,7 @@ public class DeleteFile {
         if (FileDir.isDirectory()) {
             Scanner FileName = new Scanner(System.in);
 
-            System.out.println("Enter the file name wants to Delete With Extension( Like- .txt,.doc etc) :- ");
+            System.out.println("Enter the file name(File name is case sensitive) wants to Delete With Extension( Like- .txt,.doc etc) :- ");
             String Nufil = FileName.nextLine();
             File Newfile = new File("D:\\LockedMe\\" + Nufil);
             //System.out.println(Newfile);
