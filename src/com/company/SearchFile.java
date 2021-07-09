@@ -15,26 +15,24 @@ public class SearchFile {
                     System.out.println("Enter the file name(File name is case sensitive) wants to Search With Extension( Like- .txt,.doc etc) :- ");
                     String serfil = SearchFile.nextLine();
                     File SerFile = new File("D:\\LockedMe\\" + serfil);
+                    boolean B = false;
 
-                    assert filelist != null;
+                    if (filelist == null) throw new AssertionError("File Not found in Folder");
                     for (File i : filelist) {
                         String SF = i.getName();
                         if (SF.equals(serfil)) {
+                            B = true;
                             System.out.println("Your File is = " + SerFile);
+                            break;
                         }
 
                     }
-                    for (File j : filelist) {
-                        String lF = j.getName();
-                        if (lF == serfil) {
-                        }
-                        else {
-                            System.out.println("File not Found ");
-                            break;
-                        }
-                    }
+                    if (!B){
+                    System.out.println(" File Not found ");}
+
                 }
-   }
+                }
+
 
     public static void main(String[] args) {
         SearchFile FSE = new SearchFile();

@@ -8,8 +8,8 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class AddNewFile {
-    //public AddNewFile() throws IOException {
-    public static void main(String[] args) throws IOException {
+    public void AddNewFile() throws IOException {
+
         File FileDir = new File("D:\\LockedMe");
         if (FileDir.isDirectory()) {
             Scanner FileName = new Scanner(System.in);
@@ -22,5 +22,10 @@ public class AddNewFile {
         else {
             System.out.println(FileDir.getAbsolutePath() + " Please Give correct Path of Directory or folder ");
         }
+    }
+    public static void main(String[] args) throws IOException {
+        AddNewFile addfile = new AddNewFile();
+        addfile.AddNewFile();
+
     }
 }

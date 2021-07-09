@@ -1,10 +1,12 @@
+package com.company;
+
 import java.io.File;
 import java.util.*;
 
 public class ShowFile{
 
-   // public ShowFile() {
-    public static void main(String[] args) {
+   public void ShowFile() {
+
          File FileDir = new File("D:\\LockedMe");
         if (FileDir.isDirectory()){
             List<String> listFile = Arrays.asList(FileDir.list());
@@ -15,12 +17,17 @@ public class ShowFile{
 //            System.out.println("________________||_____________________");
             Collections.sort(listFile);
             for (Object S : listFile){
-                System.out.println(S);
+                System.out.println(FileDir.getAbsoluteFile()+"\\"+S);
             }
         }
         else {
             System.out.println(FileDir.getAbsolutePath() + " Please Give correct Path of Directory or foldr  ");
         }
 
+    }
+
+    public static void main(String[] args) {
+        ShowFile NewSWF = new ShowFile();
+        NewSWF.ShowFile();
     }
 }
