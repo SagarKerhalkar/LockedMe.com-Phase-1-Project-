@@ -10,13 +10,14 @@ import java.util.Scanner;
 
 public class AddNewFile {
     public void AddNewFile() throws IOException {
+        //2 tims nned to give folder address
 
-        File FileDir = new File("D:\\LockedMe");
+        File FileDir = new File("C:\\Users\\sagark\\IdeaProjects\\LockME-Phase1project\\");
         if (FileDir.isDirectory()) {
             Scanner FileName = new Scanner(System.in);
             System.out.println("Enter the file name you wants to create with Extension( Like- .txt,.doc etc) :- ");
             String Nufil = FileName.nextLine();
-            File Newfile = new File("D:\\LockedMe\\" + Nufil);
+            File Newfile = new File("C:\\Users\\sagark\\IdeaProjects\\LockME-Phase1project\\" + Nufil);
             Newfile.createNewFile();
             System.out.println(" Your File is Created Successfully ,Name of Your file is - " + Nufil);
             FileWriter writfile = new FileWriter(Newfile);

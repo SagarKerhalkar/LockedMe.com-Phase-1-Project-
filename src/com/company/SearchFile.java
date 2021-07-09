@@ -7,14 +7,15 @@ import java.util.Scanner;
 
 public class SearchFile {
    public void SearchFile(){
-        File FileDir = new File("D:\\LockedMe");
+       // need to write 2 tims folder address
+        File FileDir = new File("C:\\Users\\sagark\\IdeaProjects\\LockME-Phase1project\\");
         List<String> listFile = Arrays.asList(FileDir.list());
         File[] filelist = FileDir.listFiles();
                 if (FileDir.isDirectory()) {
                     Scanner SearchFile = new Scanner(System.in);
                     System.out.println("Enter the file name(File name is case sensitive) wants to Search With Extension( Like- .txt,.doc etc) :- ");
                     String serfil = SearchFile.nextLine();
-                    File SerFile = new File("D:\\LockedMe\\" + serfil);
+                    File SerFile = new File("C:\\Users\\sagark\\IdeaProjects\\LockME-Phase1project\\" + serfil);
 
                     boolean B = false;
 

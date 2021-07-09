@@ -6,7 +6,8 @@ import java.util.*;
 
 public class DeleteFile {
     public String DeleteFile() throws IOException {
-            File FileDir = new File("D:\\LockedMe");
+        // need to write 2 tims folder address
+            File FileDir = new File("C:\\Users\\sagark\\IdeaProjects\\LockME-Phase1project\\");
         List<String> listFile = Arrays.asList(FileDir.list());
         File[] filenamelist = FileDir.listFiles();
         if (FileDir.isDirectory()) {
@@ -14,7 +15,7 @@ public class DeleteFile {
 
             System.out.println("Enter the file name(File name is case sensitive) wants to Delete With Extension( Like- .txt,.doc etc) :- ");
             String Nufil = FileName.nextLine();
-            File Newfile = new File("D:\\LockedMe\\" + Nufil);
+            File Newfile = new File("C:\\Users\\sagark\\IdeaProjects\\LockME-Phase1project\\" + Nufil);
             for (File i : filenamelist) {
                 String FN = i.getName();
                 if (FN.equals(Nufil)) {
