@@ -1,3 +1,5 @@
+package com.company;
+
 import java.util.Scanner;
 
 public class dicPath {
@@ -5,8 +7,9 @@ public class dicPath {
         Scanner Path = new Scanner(System.in);
         System.out.print("Please Write Folder Path Were File is Save (Like - D:\\LockedMe ,etc) :- ");
         String Dirctroypath = Path.nextLine();
+        String la =Dirctroypath;
         System.out.println(" Your Directory Path = "+Dirctroypath);
-        return null;
+        return la;
     }
 
     public static void main(String[] args) {

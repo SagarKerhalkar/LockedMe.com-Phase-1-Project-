@@ -24,13 +24,13 @@ public class DeleteFile {
                         return null;
 
                     }}  }
-            System.out.println("File Not Found Please write correct file name with extension ");
+            System.out.println("File Not Found -FNF ");
             return null;
         }
         else {
             System.out.println(FileDir.getAbsolutePath() + " Please Give correct Path of Directory or folder ");
         }
-        return null;
+                return null;
     }
 
     public static void main(String[] args) throws IOException {

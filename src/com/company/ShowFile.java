@@ -6,7 +6,8 @@ import java.util.*;
 public class ShowFile{
 
    public void ShowFile() {
-
+//       dicPath dipath = new dicPath();
+//       String na =dipath.dirpath();
          File FileDir = new File("D:\\LockedMe");
         if (FileDir.isDirectory()){
             List<String> listFile = Arrays.asList(FileDir.list());
@@ -17,7 +18,8 @@ public class ShowFile{
 //            System.out.println("________________||_____________________");
             Collections.sort(listFile);
             for (Object S : listFile){
-                System.out.println(FileDir.getAbsoluteFile()+"\\"+S);
+                System.out.println(S);
+                System.out.println("File Path - "+FileDir.getAbsoluteFile()+"\\"+S);
             }
         }
         else {
