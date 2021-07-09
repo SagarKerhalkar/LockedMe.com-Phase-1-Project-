@@ -6,7 +6,6 @@ import java.util.*;
 
 public class DeleteFile {
     public String DeleteFile() throws IOException {
-        // need to write 2 tims folder address
             File FileDir = new File("C:\\Users\\sagark\\IdeaProjects\\LockME-Phase1project\\");
         List<String> listFile = Arrays.asList(FileDir.list());
         File[] filenamelist = FileDir.listFiles();
