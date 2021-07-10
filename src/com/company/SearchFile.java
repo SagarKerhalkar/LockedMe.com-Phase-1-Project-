@@ -16,9 +16,7 @@ public class SearchFile {
                     System.out.println("Enter the file name(File name is case sensitive) wants to Search With Extension( Like- .txt,.doc etc) :- ");
                     String serfil = SearchFile.nextLine();
                     File SerFile = new File("C:\\Users\\sagark\\IdeaProjects\\LockME-Phase1project\\" + serfil);
-
                     boolean B = false;
-
                     if (filelist == null) throw new AssertionError("File Not found in Folder");
                     for (File i : filelist) {
                         String SF = i.getName();
@@ -27,11 +25,9 @@ public class SearchFile {
                             System.out.println("Successfully completed search of file  = " + serfil+"\n File address is ="+i.getAbsolutePath());
                             break;
                         }
-
                     }
                     if (!B){
                     System.out.println(" File Not found ");}
-
                 }
                 else {
                     System.out.println(FileDir.getAbsolutePath() + " Please Give correct Path of Directory or folder ");

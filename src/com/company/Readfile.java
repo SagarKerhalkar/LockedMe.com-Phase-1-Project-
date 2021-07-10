@@ -9,7 +9,6 @@ import java.util.Scanner;
 public class Readfile {
     public void Readfile() throws FileNotFoundException {
         // Need to give 2 times folder address in code
-
         File FileDir = new File("C:\\Users\\sagark\\IdeaProjects\\LockME-Phase1project\\");
         List<String> listFile = Arrays.asList(FileDir.list());
         File[] filelist = FileDir.listFiles();
@@ -18,7 +17,6 @@ public class Readfile {
             System.out.println("Enter the file name wants to Read (File name is Case sensitive), with Extension( Like- .txt,.doc etc) :- ");
             String RF = FileName.nextLine();
             File Redfile = new File("C:\\Users\\sagark\\IdeaProjects\\LockME-Phase1project\\" + RF);
-
             boolean a = false;
             if (filelist == null) throw new AssertionError("File Not found in Folder");
             for (File I : filelist) {
