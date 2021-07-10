@@ -17,6 +17,7 @@ public class WelcomeLockedme {
                     System.out.println(" Choose Below option as per your Requirement\n Option Menu Are:-");
                     System.out.println("Enter - s - To Show all file. \nEnter - c - To create a New file \nEnter - d - To Delete a File " +
                             "\nEnter - r - To Read File\nEnter - f - To Search(Find) Existing File\nEnter - e - To Exit from Application  ");
+                    System.out.println("Please select correct option to perform the application :- ");
                 } else if (ask.equals("e")) {
                     Exit ex = new Exit();
                     ex.Exit();
